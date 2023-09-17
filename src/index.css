@@ -5,7 +5,11 @@
 }
 body {
   margin: 0;
-  background:  radial-gradient(circle, rgba(220,201,238,1) 0%, rgba(148,163,233,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(220, 201, 238, 1) 0%,
+    rgba(148, 163, 233, 1) 100%
+  );
 }
 .calculator-grid {
   display: grid;
@@ -13,22 +17,21 @@ body {
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.calculator-grid  > button {
-cursor: pointer;
-font-size: 2rem;
-border: 1px solid white;
-outline: none;
-background-color:  rgb(231, 215, 247);
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgb(231, 215, 247);
 }
-.calculator-grid  button:hover {
-background-color: rgb(208, 239, 106);
+.calculator-grid button:hover {
+  background-color: rgb(208, 239, 106);
 }
-
 
 .span-two {
   grid-column: span 2;
@@ -50,6 +53,6 @@ background-color: rgb(208, 239, 106);
   font-size: 1.5rem;
 }
 .output .current-operand {
-    color: white;
-    font-size: 2.5rem;
-  }
+  color: white;
+  font-size: 2.5rem;
+}
